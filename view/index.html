@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    
+  <meta charset="UTF-8">
+  <title>Interactive Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/css/mdb.min.css" rel="stylesheet">
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+      <link rel="stylesheet" href="css/style.css">
+      <script type="text/javascript">
+        (function() {
+          var didInit = false;
+          function initMunchkin() {
+            if(didInit === false) {
+              didInit = true;
+              Munchkin.init('072-HIP-855');
+              // Munchkin.munchkinFunction('associateLead', {
+              //   'Email': 'pannreachseyrana@gmail.com',
+              //   'FirstName': 'Rana',
+              //   'LastName': 'Pann'
+              // },
+              //   '26fec4db18eb0acd0408c8c5e973666bd9056419'
+              // );
+            }
+          }
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = '//munchkin.marketo.net/munchkin.js';
+          s.onreadystatechange = function() {
+            if (this.readyState == 'complete' || this.readyState == 'loaded') {
+              initMunchkin();
+            }
+          };
+          s.onload = initMunchkin;
+          document.getElementsByTagName('head')[0].appendChild(s);
+
+          
+        })();
+
+      
+        </script>     
+      
+</head>
+
+<body>
+    <div class="container">
+    <div class="wrapper">
+      <ul class="steps">
+        <li class="is-active">Step 1</li>
+        <li>Step 2</li>
+        <li>Step 3</li>
+      </ul>
+      <div class="form-wrapper">
+        <fieldset class="section is-active">
+          <div class="row cf">
+            <div class="three col">
+              <input type="radio" name="r1" id="r1" value="10">
+              <label for="r1">
+                <h4>10</h4>
+              </label>
+            </div>
+            <div class="three col">
+              <input type="radio" name="r1" id="r2" value="50"><label for="r2">
+                <h4>50</h4>
+              </label>
+            </div>
+            <div class="three col">
+              <input type="radio" name="r1" id="r3" value="100"><label for="r3">
+                <h4>100</h4>
+              </label>
+            </div>
+          </div>
+          <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section">
+          <div class="row cf">
+            <div class="three col">
+              <input type="radio" name="r2" id="r4" value="10">
+              <label for="r4">
+                <h4>10</h4>
+              </label>
+            </div>
+            <div class="three col">
+              <input type="radio" name="r2" id="r5" value="50"><label for="r5">
+                <h4>50</h4>
+              </label>
+            </div>
+            <div class="three col">
+              <input type="radio" name="r2" id="r6" value="100"><label for="r6">
+                <h4>100</h4>
+              </label>
+            </div>
+          </div>
+          <div class="button">Next</div>
+        </fieldset>
+        <fieldset class="section">
+          <div class="row cf">
+            <div class="three col">
+              <input type="radio" name="r3" id="r7" value="10">
+              <label for="r7">
+                <h4>10</h4>
+              </label>
+            </div>
+            <div class="three col">
+              <input type="radio" name="r3" id="r8" value="50"><label for="r8">
+                <h4>50</h4>
+              </label>
+            </div>
+            <div class="three col">
+              <input type="radio" name="r3" id="r9" value="100"><label for="r9">
+                <h4>100</h4>
+              </label>
+            </div>
+          </div>
+          <input class="submit button_submit" type="button" value="Sign Up">
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
