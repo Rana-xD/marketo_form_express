@@ -16,24 +16,7 @@ $(document).ready(function(){
     console.log(value);
     
     
-    
-    // $.ajax({
-    //   url: '/getLeadid',
-    //   method: "POST",
-    //   contentType: 'application/json',
-    //   processData: false,
-    //   data: JSON.stringify({data: value}),
-    //   success: function(result){
-    //     console.log("Success");
-    //     // console.log(result.id);
-    //     id = result.id;
-    //     console.log(id);
-    //   },
-    //   error: function(error){
-    //     console.log("ERROR");
-    //   }
-    // })
-
+  
     $(".form-wrapper .button").click(function(){
       var button = $(this);
       var currentSection = button.parents(".section");
